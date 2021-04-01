@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MyComponent1Component } from './my-component1/my-component1.component';
+import { MyColorChanger1Directive } from './my-color-changer1.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyComponent1Component,
+    MyColorChanger1Directive
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MyComponent1Component]
 })
 export class AppModule { }
