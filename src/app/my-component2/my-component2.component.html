@@ -1,0 +1,24 @@
+
+<hr>
+<div>
+    <p>This is the 2nd component having a Class named 'MyComponent2Component' with selector 'app-my-component2'.</p>
+    <hr>
+    <!-- Note that ngIf requires an Uppercase I, not i -->
+    <!-- <div *ngIf = "myArray.length > 0"> -->
+
+     <div>
+         <button (click)="ToggleSortMyArray()">
+            Array Sorrted: {{sorted ? 'True' : 'False'}}
+        </button>
+
+        <div *appMyArrayCheck1 = "myArray"> 
+            <h2> Numbers :  
+            </h2>
+            <hr>
+            <p *ngFor="let n of myArray"> {{n}}</p>
+        </div>
+
+    </div>   
+
+</div>
+<hr>
